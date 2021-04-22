@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <title>Mountain</title>
+  </head>
+  <body>
+
+<a id="upbutton" href="#" onclick="smoothJumpUp(); return false;">
+    <img src="img/arrow_up.png" width="50" height="50" alt="Top" border="none" title="Наверх">
+</a>
+    <header class="main-header container">
+      <nav class="main-header-nav">
+        <div class="site-logo">
+		  <a>Mountain</a>
+		</div>
+        <ul class="site-navigation" id="siteNavigation">
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="">О нас</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="">Туры</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="">Подбор тура</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="">Блог</a>
+          </li>
+		  <li class="site-navigation-item">
+            <a class="site-navigation-link" href="">Контакты</a>
+          </li>
+		  <li class="site-navigation-item">
+            <a class="site-navigation-link" href="">8 (800) 777-33-25</a>
+          </li>
+		  <li class="site-navigation-item">
+            <a class="site-navigation-link" href="">
+			  <img src="img/search.svg" alt="Поиск"></img>
+			</a>
+          </li>
+		  <li class="site-navigation-item">
+            <a class="site-navigation-link" href="">
+			  <img alt="Профиль" src="img/profile.svg"></img>
+			</a>
+          </li>
+		  <li class="site-navigation-item" id="burger">
+		    <a href="#" class="site-navigation-icon"  id="icon">&#9776;</a>
+		  </li>
+        </ul>
+      </nav>
+	  <h1 class="main-header-title">Эверест</h1>
+	  <div class="more_info">
+	    <a class="main-header-submit" href="#">Подробнее</a>
+	  </div>
+    </header>
+    <section class="tours container">
+	    <div class="tours-content">
+		  <div class="tours-description">
+            <h1 class="section-title"><a name="tours"></a>Туры с восхождением на вершины мира</h1> 		  
+		    <p>Мы являемся экспертами в организации альпинистских туров для опытных альпинистов 
+			и для новичков. Вы можете доверить нам полную организацию вашего приключения от А до Я
+			и быть уверенными в качестве и безопасности восхождения.</p>
+            <p>Наша компания предоставляет все необходимое&#58; консультацию по выбору тура, перелет,
+			визу, бронирование проживания, питание, оборудование, необходимое для восхождения,
+			опытных гидов, полное сопровождение.</p>			
+		  </div>
+		  <div class="tours-picture">
+		    <img class="tours-img" src="img/map_mountains.png">
+			<div>
+			  <p class="denali map"><a href="#win1">Денали</a></p>
+			  <a href="#x" class="overlay" id="win1"></a>
+                <div class="popup">
+			      <img src="img/denali_win.jpg" width="60" height="40">
+                  Денали — двуглавая гора на юге центральной части Аляски, высочайшая гора Северной Америки. 
+				  Находится в центре национального парка Денали. Конгресс США переименовал гору в 1896 году, 
+				  присвоив ей имя Мак-Кинли в честь 25-го президента Соединённых Штатов Америки.
+                  <a class="close"title="Закрыть" href="#close"></a>
+              </div>
+			</div>
+            <div>
+			  <p class="orisaba map"><a href="#win2">Орисаба</a></p>
+			  <a href="#x" class="overlay" id="win2"></a>
+                <div class="popup">
+			      <img src="img/orisaba_win.jpg" width="60" height="40">
+                  Орисаба или Ситлалтепетль — действующий вулкан в Мексике, самая высокая вершина страны. 
+				  Третья по превышению в Северной Америке. Её высота составляет 5636 м по данным GPS и 
+				  5 611 м по данным системы INEGI. 
+                  <a class="close"title="Закрыть" href="#close"></a>
+              </div>
+			</div>
+            <div>
+			  <p class="akonkagua map"><a href="#win3">Аконкагуа</a></p>
+			  <a href="#x" class="overlay" id="win3"></a>
+                <div class="popup">
+			      <img src="img/akonkagua_win.jpg" width="60" height="40">
+                  Аконка́гуа — высочайшая вершина в Андах, расположена на территории аргентинской провинции 
+				  Мендоса в 15 км от границы с Чили. Её высота составляет 6960,8 м над уровнем моря. 
+				  Высочайшая вершина в мире за пределами Азии, также она является высочайшей вершиной Аргентины,
+				  Южной Америки, западного и южного полушарий.
+                  <a class="close"title="Закрыть" href="#close"></a>
+              </div>
+			</div>
+            <div>
+			  <p class="kotopakhi map"><a href="#win4">Котопахи</p>
+			  <a href="#x" class="overlay" id="win4"></a>
+                <div class="popup">
+			      <img src="img/kotopakhi_win.jpg" width="60" height="40">
+                  Котопа́хи — вторая по высоте вершина Эквадора и самый высокий действующий вулкан страны. 
+				  Котопахи входит также и в число самых высоких активных вулканов планеты. Вместе с вершинами 
+				  Чимборасо, Уаскаран и Килиманджаро Котопахи находится дальше от центра Земли, чем Эверест.
+                  <a class="close"title="Закрыть" href="#close"></a>
+              </div>
+			</div>
+            <div>
+			  <p class="matterhorn map"><a href="#win5">Маттерхорн</p>
+			  <a href="#x" class="overlay" id="win5"></a>
+                <div class="popup">
+			      <img src="img/matterhorn_win.jpg" width="60" height="40">
+                  Ма́ттерхорн — вершина в Пеннинских Альпах на границе Швейцарии в кантоне Вале и Италии в 
+				  провинции Валле-д’Аоста. Высота вершины составляет 4478 метров над уровнем моря. Маттерхорн 
+				  имеет примечательную четырёхгранную пирамидальную форму со стенами, обращёнными по сторонам 
+				  света.
+                  <a class="close"title="Закрыть" href="#close"></a>
+              </div>
+			</div>
+            <div>
+			  <p class="elbrus map"><a href="#win6">Эльбрус</p>
+			  <a href="#x" class="overlay" id="win6"></a>
+                <div class="popup">
+			      <img src="img/elbrus_win.jpg" width="60" height="40">
+                  Эльбру́с — стратовулкан на Кавказе — самая высокая горная вершина России и Европы при условии 
+				  проведения границы между Европой и Азией по Главному Кавказскому хребту или южнее. Эльбрус 
+				  включён в список высочайших вершин частей света «Семь вершин». 
+                  <a class="close"title="Закрыть" href="#close"></a>
+              </div>
+			</div>
+            <div>
+			  <p class="everest map"><a href="#win7">Эверест</p>
+			  <a href="#x" class="overlay" id="win7"></a>
+                <div class="popup">
+			      <img src="img/everest_win.jpg" width="60" height="40">
+                  Джомолу́нгма, Эвере́ст, Сагарма́тха, Шэнмуфэн — высочайшая вершина Земли. 
+                  <a class="close"title="Закрыть" href="#close"></a>
+              </div>
+			</div>
+            <div>
+			  <p class="kilimangaro map"><a href="#win8">Килиманджаро</p>
+			  <a href="#x" class="overlay" id="win8"></a>
+                <div class="popup">
+			      <img src="img/kilimangaro_win.jpg" width="60" height="40">
+                  Килиманджа́ро — высочайший стратовулкан Африки, находящийся на северо-востоке Танзании, 
+				  высочайшая точка континента. C 1902 по 1918 годы назывался Вершина Кайзера Вильгельма. 
+				  Килиманджаро возвышается над плоскогорьем Масаи, которое расположено на высоте 900 
+				  метров над уровнем моря.
+                  <a class="close"title="Закрыть" href="#close"></a>
+              </div>
+			</div>   			
+		  </div>  
+		</div>  
+	  </section>
+	  <section class="portfolio-tours container">
+	    <h2 class="section-title">Популярные туры</h2>
+		<div class="wrapper">
+		  <div id="slides" class="slides">
+		    <div class="beluga mountain">
+			  <p class="country">Россия</p>
+		      <h3>Белуха</h3>
+		      <p>4506 м | 12 дней | от 45000 &#8381;</p>
+		      <p class="level middle" id="level">Средний уровень</p>
+		    </div>
+		    <div class="elbrus mountain">
+		      <p class="country">Россия</p>
+			  <h3>Эльбрус</h3>
+		      <p>5642 м | 10 дней | от 25000 &#8381;</p>
+		      <p class="level middle" id="level">Средний уровень</p>
+		    </div>
+			<div class="kilimangaro mountain">
+		      <p class="country">Танзания</p>
+			  <h3>Килиманджаро</h3>
+		      <p>5895 м | 4 дня | от 55000 &#8381;</p>
+		      <p class="level easy" id="level">Простой уровень</p>
+		    </div>
+			<div class="denali mountain">
+		      <p class="country">США</p>
+			  <h3>Денали</h3>
+		      <p>6190 м | 14 дней | от 65000 &#8381;</p>
+		      <p class="level middle" id="level">Средний уровень</p>
+		    </div>
+			<div class="everest mountain">
+		      <p class="country">Непал</p>
+			  <h3>Эверест</h3>
+		      <p>8848 м | 14 дней | от 85000 &#8381;</p>
+		      <p class="level hard" id="level">Сложный уровень</p>
+		    </div>
+			<div class="orisaba mountain">
+		      <p class="country">Мексика</p>
+			  <h3>Орисаба</h3>
+		      <p>5636 м | 10 дней | от 50000 &#8381;</p>
+		      <p class="level middle" id="level">Средний уровень</p>
+		    </div>
+		  </div>
+		  <button class="controls previous" id="previous">Previous</button>
+          <button class="controls next" id="next">Next</button>
+		  <div class="ant-carousel-dots"></div>
+		</div>  
+	  </section>
+	
+	  <section class="tours-table container">
+	    <h2 class="section-title">Россия</h2>
+		<p class="tours-details">Более 15 туров для альпинистов всех уровней</p>
+		<table>
+		  <tr>
+		    <th class="row-1">Вершина</th>
+			<th class="row-2">Высота</th>
+			<th class="row-3">Уровень</th>
+			<th class="row-4">Стоимость</th>
+		  </tr>
+		  <tr>
+		    <td class="row-1">Эльбрус</td>
+			<td class="row-2">5642 м</td>
+			<td class="row-3">Средний</td>
+			<td class="row-4">от 25 000 &#8381;</td>
+		  </tr>
+		  <tr>
+		    <td class="row-1">Казбек</td>
+			<td class="row-2">5033 м</td>
+			<td class="row-3">Сложный</td>
+			<td class="row-4">от 30 000 &#8381;</td>
+		  </tr>
+		  <tr>
+		    <td class="row-1">Белуха</td>
+			<td class="row-2">4506 м</td>
+			<td class="row-3">Простой</td>
+			<td class="row-4">от 20 000 &#8381;</td>
+		  </tr>
+		  <tr>
+		    <td class="row-1">Дыхтау</td>
+			<td class="row-2">5204 м</td>
+			<td class="row-3">Сложный</td>
+			<td class="row-4">от 40 000 &#8381;</td>
+		  </tr>
+		  <tr class="invisible column">
+		    <td class="row-1">Ключевская сопка</td>
+			<td class="row-2">4750 м</td>
+			<td class="row-3">Средний</td>
+			<td class="row-4">от 30 000 &#8381;</td>
+		  </tr>
+		  <tr class="invisible column">
+		    <td class="row-1">Джимара</td>
+			<td class="row-2">4780 м</td>
+			<td class="row-3">Сложный</td>
+			<td class="row-4">от 40 000 &#8381;</td>
+		  </tr>
+		  <tr class="invisible column">
+		    <td class="row-1">Тебулосмта</td>
+			<td class="row-2">4493 м</td>
+			<td class="row-3">Сложный</td>
+			<td class="row-4">от 35 000 &#8381;</td>
+		  </tr>
+		  <tr class="invisible column">
+		    <td class="row-1">Народная</td>
+			<td class="row-2">1895 м</td>
+			<td class="row-3">Простой</td>
+			<td class="row-4">от 15 000 &#8381;</td>
+		  </tr>
+		  <tr class="invisible column">
+		    <td class="row-1">Фишт</td>
+			<td class="row-2">2868 м</td>
+			<td class="row-3">Средний</td>
+			<td class="row-4">от 25 000 &#8381;</td>
+		  </tr>
+		  <tr class="invisible column">
+		    <td class="row-1">Манарага</td>
+			<td class="row-2">1820 м</td>
+			<td class="row-3">Простой</td>
+			<td class="row-4">от 15 000 &#8381;</td>
+		  </tr>
+		  <tr class="invisible column">
+		    <td class="row-1">Тепли</td>
+			<td class="row-2">4431 м</td>
+			<td class="row-3">Сложный</td>
+			<td class="row-4">от 35 000 &#8381;</td>
+		  </tr>
+		  <tr class="invisible column">
+		    <td class="row-1">Катын-Тау</td>
+			<td class="row-2">4979 м</td>
+			<td class="row-3">Сложный</td>
+			<td class="row-4">от 35 000 &#8381;</td>
+		  </tr>
+		</table>
+		
+		<div class="more_info">
+	      <a class="tours-table-submit" href="#" id="submit">Смотреть все</a>
+	    </div>
+	  </section>
+	  <section class="blog container">
+	    <h2 class="section-title">Блог</h2>
+		<div class="blog-wrapper">
+		  <div class="left-part">
+		    <div class="article-title article-first-ascent">
+		      <time datetime="2020-01-15">15 января 2020</time>
+			  <p>Как подготовиться к первому восхождению на вершину</p>
+		    </div>
+		    <div class="article-title">
+		      <time datetime="2020-01-10">15 января 2020</time>
+			  <p>Фестиваль Alpika Freeski Alpindustria Fest 
+			  Красная Поляна 13-16 февраля</p>
+		    </div>
+		    <div class="article-title">
+		      <time datetime="2019-12-20">20 декабря 2019</time>
+			  <p>Особенности альпинизма на Камчатке.
+			  Все о Ключевой сопке</p>
+		    </div>
+		    <div class="article-title">
+		      <time datetime="2019-12-15">15 декабря 2019</time>
+			  <p>Что происходит с человеком на высоте больше 3000
+			  метров?</p>
+		    </div>
+		    <div class="article-title">
+		      <time datetime="2019-12-15">15 декабря 2019</time>
+			  <p>Что происходит с человеком на высоте больше 3000
+			  метров?</p>
+		    </div>
+		    <div>
+	          <a class="all-news-submit" href="#" id="all-news-submit">Читать все новости</a>
+	        </div>
+		  </div>  
+		  <div class="right-part">
+		    <article class="article first-ascent">
+		      <img src="img/first-ascent.jpg" alt="Восхождение" width="100%">
+		      <time datetime="2020-01-15">15 января 2020</time>
+		      <h3>Как подготовиться к первому восхождению на вершину</h3>
+		      <p>Перед тем, как отправиться на покорение вершины горы, нужно не только привести
+		      в порядок свою физическую форму, но и тренировать выносливость, дыхательную и 
+		      сердечно-сосудистую системы. Именно на них приходится максимальная нагрузка на
+		      высоте. Поэтому из-за недостаточной подготовки вы можете сойти на полпути. Чтобы
+		      этого не случилось, занимайтесь плаванием, бегом, велосипедом, кардитренировками.</p>
+		      <p>Как должны проходить тренировки? В первую очередь, тренировки должны проходить
+		      постоянно, эффективно и интенсивно. Кроме того, нагрузка постепенно должна
+		      увеличиваться. В случае с бегом обязательно делать это с учетом пульса. Грамотно
+		      спланированный бег позволит не только сбросить вес, но и укрепит сердечную мышцу.
+		      При беге с высоким пульсом вы позволите организму привыкнуть к недостатку 
+		      кислорода - то, с чем обязательно встретитесь в горах. Для укрепления физической 
+		      подготовки и повышения выносливости также бегайте в горку или в быстром темпе
+		      поднимайтесь по лестницам. И не забудьте отдохнуть за неделю до путешествия!</p>
+	        </article>
+		    <article class="article invisible">
+		      <img src="img/fest.jpg" alt="Горный склон" width="100%">
+			  <time datetime="2020-01-10">15 января 2020</time>
+			  <h3>Фестиваль Alpika Freeski Alpindustria Fest</h3>
+		      <p>13-16 февраля 2020 г. сильнейшие горнолыжники России встретятся на трассах Альпики, 
+			  чтобы принять участие в зимнем фестивале «АльпИндустрии» — Alpika Freeski Alpindustria Fest.</p>
+              <p>4 дня высокогорного адреналина, лекций и apres-ski вечеринкок! Кроме того, все участники 
+			  фестиваля, катающиеся вне трасс, смогут посетить практические занятия по лавинной 
+			  безопасности и альпинизму от Ассоциации Горных Гидов России.</p>
+
+              <p>Для участников приготовили 3 типа соревнований:</p>
+              <ul>
+                <li><strong>Фрирайд</strong>
+                  <p>Во время феста пройдет этап серии соревнований Freeride World Qualifier. Это состязание
+			      для профессиональных фрирайдеров, поэтому ждём настоящего экшена. Пухляк, берегись!</p>
+			    </li>
+			    <li><strong>Ски-альпинизм</strong>
+                  <p>На фестивале AFAF пройдёт открытый Чемпионат г. Москвы по ски-альпинизму в индивидуальной
+			      и командной гонке. В России этот вид спорта не очень распространен, так что у вас будет 
+			      шанс открыть возможно новое для себя направление.</p>
+			    </li>
+			    <li><strong>Гонка профессионалов</strong>
+                  <p>Очень интересная и захватывающая гонка, для участия в которой нужно обладать альпинистской 
+			      базой знаний и умений, а также уметь работать с лавинным снаряжением и напарником на 
+			      сложном снежном рельефе. Гонка для настоящих экспертов в своем деле!</p>
+			    </li>
+			  </ul>
+		    </article>
+		    <article class="article invisible">
+		      <img src="img/sopka.jpg"  width="100%" alt="Ключевская Сопка. Извержение">
+			  <time datetime="2019-12-20">20 декабря 2019</time>
+			  <h3>Особенности альпинизма на Камчатке.
+			  Все о Ключевой сопке</h3>
+			  <p>Камчатка — это мир вулканов, больших и маленьких, потухших на века и действующих. На территории 
+			  этого края расположились более трех сотен вулканов. Активными являются около тридцати, однако самым 
+			  удивительным и мощным является только лишь один — Ключевая сопка.</p>
+			  <p>Место удивительное и заснеженное. Другой мир, другое измерение. В этом месте люди ощущают все 
+			  величие окружающей природы, ее неповторимую красоту и неуемную мощь.</p>
+			  <p>Снежная гора с горячим «сердцем», которая, время от времени выплескивает свою «страсть» в виде
+			  извержений или даже взрывов раскаленной лавой.</p>
+			  <p>Это место привлекает множество туристов. Они не пугаются ни трудной дороги, ни сурового климата, 
+			  ведь мало кто откажется своими глазами увидеть такое величайшее природное чудо. Этот мощный вулкан
+			  на Камчатке забыть просто невозможно, он остается в памяти навсегда.</p>
+			  <p>Местные жители рассказывают различные легенды об этом месте, но самой распространенной является 
+			  легенда о том, что внутри вулкана живут духи предков, и когда из вулкана валит дым, местные жители
+			  говорят, что они топят свои жилища.</p>
+		    </article>
+		    <article class="article invisible">
+		      <time datetime="2019-12-15">15 декабря 2019</time>
+			  <h3>Что происходит с человеком на высоте больше 3000
+			  метров?</h3>
+			
+		    </article>
+		  </div>	
+		</div>
+	  </section>
+	  <section class="feedback container">
+	    <div class="left-part">
+	      <h2 class="section-title">Нужна помощь с выбором тура?</h2>
+		  <p>Заполните форму, наш менеджер свяжется с вами
+		  в ближайшее время и подберет подходящий тур</p>
+		  <form class="feedback-form-group" action="" method="post">
+		    <input type="text" name="fullname" id="fullname" class="fullname" required placeholder="Имя" minlength="10" maxlength="200">
+		  
+		    <input type="tel" name="tel" id="tel" class="tel" required placeholder="Телефон"  minlength="10" maxlength="20">
+		  
+            <input type="email" name="email" id="email" class="email" required placeholder="E-mail"  minlength="10" maxlength="200">	
+            <button class="button-main" type="submit">Отправить</button>		  
+		  </form>
+		  <p>Нажимая на кнопку вы соглашаетесь с условиями обработки персональных данных</p>
+		</div>
+        <div class="right-part">
+		  <img src="img/feedback-right.jpg"  width="100%" alt="Заснеженный склон">
+        </div>		
+	  </section>
+	  
+      <section class="social container">
+	    <div class="left-part">
+		</div>
+		<div class="right-part">
+		  <h2 class="section-title">Контакты</h2>
+		  <div class="adress">
+		    <p>Адрес&#58;</p>
+			<h3>Санкт-Петербург,
+			ул. Большая Конюшенная, 19</h3>
+		  </div>
+		  <div class="tel">
+		    <p>Телефон&#58;</p>
+			<h3>8 (800) 777-33-25</h3>
+		  </div>
+		  <div class="email">
+		    <p>E-mail&#58;</p>
+			<h3>info@mountain.ru</h3>
+		  </div>
+		  <div class="social-list">
+		    <p>Социальные сети&#58;</p>
+			<ul>
+			  <li class="social-list-item">
+            <a class="social-list-link social-list-link--fb" href="#">Facebook</a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link social-list-link--inst" href="#">Instagram</a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link social-list-link--tw" href="#">Twitter</a>
+          </li>
+			</ul>
+		  </div>
+		</div>
+	  </section>
+
+
+    <footer class="main-footer">
+      <div class="container">
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a class="social-list-link social-list-link--vk" href="#">ВК</a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link social-list-link--tl" href="#">Телеграм</a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link social-list-link--inst" href="#">Инстаграм</a>
+          </li>
+		  <li class="social-list-item">
+            <a class="social-list-link social-list-link--twit" href="#">Твиттер</a>
+          </li>
+		  <li id="burgerFooter"><a href="#footer" class="social-list-icon" id="iconFooter">&#9776;</a></li>
+        </ul>
+      </div>
+    </footer>
+  <script src="slide.js"></script>
+  <script src="submit.js"></script>
+  <script src="blog.js"></script>
+  </body>
+</html>
